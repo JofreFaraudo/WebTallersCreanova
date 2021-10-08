@@ -1,0 +1,30 @@
+<?php
+require './API/functions.php';
+session_start();
+if((!$_SESSION['ID']>0)||(!verify(1,$_SESSION['ID']))){
+header("Location: /LogIn.php");
+}
+?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<link href="/css/estils.css" rel="stylesheet" type="text/css">
+<title>Add a workshop | Tallers d&#x27;ESOCreanova</title>
+<link href='/css/fontawesome-free-5.0.6/web-fonts-with-css/css/fontawesome-all.css' rel='stylesheet' type='text/css'>
+<link href='/css/bootstrap/bootstrap.min.css' rel='stylesheet' type='text/css'>
+<script type='text/js' language='JavaScript' src='js/bootstrap.min.js'></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body class='inici'>
+<?php include_once('nav.php'); ?>
+<div class='box'>
+<h2>Actualitzar usuaris</h2>
+<h3> En manteniment</h3>
+<p> Pagina en desemvolupament</p>
+<input type="submit" href
+="LogIn.php" value="enviar" /> 
+</div>
+</body>
+</html>
