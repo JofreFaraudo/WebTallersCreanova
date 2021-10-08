@@ -1,2 +1,2 @@
-# WebtallerCreanova
-Metaprojecte WEB dels tallers
+# WebTallersCreanova
+Projecte dúna WEB protitip
