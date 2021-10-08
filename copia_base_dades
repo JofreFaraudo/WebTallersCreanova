@@ -1,0 +1,114 @@
+-- MySQL dump 10.13  Distrib 5.7.22, for Linux (x86_64)
+--
+-- Host: localhost    Database: Tallers
+-- ------------------------------------------------------
+-- Server version	5.7.22-0ubuntu0.16.04.1
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `Tallers`
+--
+
+DROP TABLE IF EXISTS `Tallers`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `Tallers` (
+  `name` text NOT NULL,
+  `Location` text NOT NULL,
+  `Date` date NOT NULL,
+  `start` time NOT NULL,
+  `end` time NOT NULL,
+  `Teacher` text NOT NULL,
+  `Subject` text NOT NULL,
+  `Level` text NOT NULL,
+  `requires` text,
+  `PLACES` int(11) NOT NULL,
+  `GTancat` tinyint(1) NOT NULL,
+  `People` text,
+  `PSignedUp` text,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=232 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `Tallers`
+--
+
+LOCK TABLES `Tallers` WRITE;
+/*!40000 ALTER TABLE `Tallers` DISABLE KEYS */;
+INSERT INTO `Tallers` VALUES ('dasds','adsadsa','2018-06-15','11:12:00','12:12:00','16','CAT','HIG','',12,0,NULL,'16,16,37',188),('el fets verbals','sala','2018-06-15','11:14:00','12:14:00','16','CAT','HIG','',2,0,NULL,'16',189),('niaga','adsdsd','2018-06-15','11:19:00','12:19:00','16','CAT','HIG','',12,0,NULL,'16',190),('af','dsf','2018-06-15','11:42:00','12:42:00','16','CAT','HIG','',12,0,NULL,'16',192),('a','a','2018-06-19','10:41:00','11:41:00','16','CAT','HIG','',12,1,'29,33,16','16',193),('a','a','2018-06-19','10:47:00','11:47:00','16','CAT','HIG','',12,1,'29,33,16',NULL,194),('a','a','2018-06-19','10:48:00','11:48:00','16','CAT','HIG','',12,1,'29,33,16',NULL,195),('a','a','2018-06-19','10:49:00','11:49:00','16','CAT','HIG','',12,1,'29,33,16',NULL,196),('a','a','2018-06-19','10:50:00','11:50:00','16','CAT','HIG','',12,1,'29,33,16',NULL,197),('a','a','2018-06-19','10:51:00','11:51:00','16','CAT','HIG','',12,1,'29,33,16','16',198),('a','a','2018-06-19','10:51:00','11:51:00','16','CAT','HIG','',12,1,'29,33,16',NULL,199),('a','a','2018-06-19','11:04:00','12:04:00','16','CAT','HIG','',12,1,'29,33,16',NULL,200),('a','a','2018-06-19','11:05:00','12:05:00','16','CAT','HIG','',12,1,'29,33,16',NULL,201),('a','a','2018-06-19','11:05:00','12:05:00','16','CAT','HIG','',12,1,'29,33,16',NULL,202),('a','a','2018-06-19','11:06:00','12:06:00','16','CAT','HIG','',12,1,'29,33,16',NULL,203),('a','a','2018-06-19','11:07:00','12:07:00','16','CAT','HIG','',12,1,'29,33,16',NULL,204),('a','a','2018-06-19','11:08:00','12:08:00','16','CAT','HIG','',12,1,'29,33,16',NULL,205),('a','a','2018-06-19','11:17:00','12:17:00','16','CAT','HIG','',12,1,'29,33,16',NULL,206),('a','a','2018-06-19','11:18:00','12:18:00','16','CAT','HIG','',12,1,'29,33,16',NULL,207),('a','a','2018-06-19','11:19:00','12:19:00','16','CAT','HIG','',12,1,'29,33,16',NULL,208),('a','a','2018-06-19','11:20:00','12:20:00','16','CAT','HIG','',12,1,'29,33,16',NULL,209),('a','a','2018-06-19','11:23:00','12:23:00','16','CAT','HIG','',12,1,'29,33,16',NULL,210),('a','a','2018-06-19','11:24:00','12:24:00','16','CAT','HIG','',12,1,'29,33,16',NULL,211),('a','a','2018-06-19','11:25:00','12:25:00','16','CAT','HIG','',12,1,'29,33,16',NULL,212),('a','a','2018-06-19','11:30:00','12:30:00','16','CAT','HIG','',12,1,'29,33,16',NULL,213),('a','a','2018-06-19','11:34:00','12:34:00','16','CAT','HIG','',12,1,'29,33,16',NULL,214),('a','a','2018-06-19','11:34:00','12:34:00','16','CAT','HIG','',12,1,'29,33,16',NULL,215),('a','a','2018-06-19','11:37:00','12:37:00','16','CAT','HIG','',12,1,'29,33,16',NULL,216),('a','a','2018-06-19','11:38:00','12:38:00','16','CAT','HIG','',12,1,'29,33,16',NULL,217),('a','a','2018-06-19','11:39:00','12:39:00','16','CAT','HIG','',12,1,'29,33,16',NULL,218),('a','a','2018-06-19','11:40:00','12:40:00','16','CAT','HIG','',12,1,'29,33,16',NULL,219),('a','a','2018-06-19','11:49:00','12:49:00','16','CAT','HIG','',12,1,'29,33,16',NULL,220),('a','a','2018-06-19','11:49:00','12:49:00','16','CAT','HIG','',12,1,'29,33,16','16',221),('a','a','2018-06-19','11:51:00','12:51:00','16','CAT','HIG','',12,1,'29,33,16',NULL,222),('a','a','2018-06-19','11:51:00','12:51:00','16','CAT','HIG','',12,1,'29,33,16',NULL,223),('a','a','2018-06-19','11:54:00','12:54:00','16','CAT','HIG','',12,1,'29,33,16',NULL,224),('a','a','2018-06-19','11:54:00','12:54:00','16','CAT','HIG','',12,1,'29,33,16',NULL,225),('a','a','2018-06-19','11:55:00','12:55:00','16','CAT','HIG','',12,1,'29,33,16',NULL,226),('a','a','2018-06-19','11:56:00','12:56:00','16','CAT','HIG','',12,1,'29,33,16','16',227),('a','a','2018-06-19','11:58:00','12:58:00','16','CAT','HIG','',12,1,'29,33,16',NULL,228),('b','b','2018-06-19','11:59:00','12:59:00','16','CAT','HIG','',12,1,'29,33',NULL,229),('a','a','2018-06-19','16:17:00','17:17:00','16','CAT','HIG','',12,0,NULL,NULL,230),('sa','s','2018-06-19','16:18:00','17:18:00','16','CAT','HIG','',12,0,NULL,NULL,231);
+/*!40000 ALTER TABLE `Tallers` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `USERS`
+--
+
+DROP TABLE IF EXISTS `USERS`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `USERS` (
+  `firstname` text NOT NULL,
+  `lastname` text NOT NULL,
+  `email` text NOT NULL,
+  `password` text NOT NULL,
+  `LANG` text NOT NULL,
+  `ISTEACHER` tinyint(1) NOT NULL,
+  `LEVEL` text NOT NULL,
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB AUTO_INCREMENT=39 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `USERS`
+--
+
+LOCK TABLES `USERS` WRITE;
+/*!40000 ALTER TABLE `USERS` DISABLE KEYS */;
+INSERT INTO `USERS` VALUES ('Admin','prof','admin@esocreanova.org','9ùô¡QüR[•âÖ°ÂràC','ca',1,'ESO4',16),('Adria','Gibert','adriagibert@esocreanova.org','Œ]/ÿ_ÆTé¹\"åüëA©Í','es',0,'PRI6',29),('AdriÃ ','Raurich','adria@esocreanova.org','wî¤¥Kœ{)o¾úcé','ca',1,'ESO1',30),('Alex','Jiang','alexjiang@esocreanova.org','gPõ­ŠònFHd|˜˜à}','es',0,'PRI6',32),('Mei','Calaf','meicalaf@esocreanova.org','àTö-´&]ÐÔTe³Z²-','ca',0,'ESO1',33),('BarcelonÃ­','Carrasco','barcrlonicarrasco@esocreanova.org','“+ÔÐÑD¨g¨ß—¿ÏúN','es',0,'BATX1',34),('Alfredo','Gimenez','alfredogimenez@esocreanova.org','òVM=¼dÐÆ/u§GSÓ','es',0,'ESO2',35),('Tescanto','Pepo','tescantopepo@esocreanova.org','òVM=¼dÐÆ/u§GSÓ','es',0,'ESO1',36),('Sergio','Bufill','sergiobufill@esocreanova.org','í|¨‘~3–(ÜŽÉˆQW','ca',0,'PRI6',37),('a','a','a@a','ðú¶ÙÍµšlQE@Áe¿_','ca',0,'ESO3',38);
+/*!40000 ALTER TABLE `USERS` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `lol`
+--
+
+DROP TABLE IF EXISTS `lol`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `lol` (
+  `l` text
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `lol`
+--
+
+LOCK TABLES `lol` WRITE;
+/*!40000 ALTER TABLE `lol` DISABLE KEYS */;
+/*!40000 ALTER TABLE `lol` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2018-06-21 10:14:20
