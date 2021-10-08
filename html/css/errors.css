@@ -1,0 +1,25 @@
+.center{
+padding: 10em;
+text-align: center;
+}
+.content h2{
+font-size: 3em;
+color: #fff;
+font-family: 'courier new', sans-serif;
+letter-spacing: 0.3em;
+}
+.content{
+background: linear-gradient(to top left, #001FFF, #1E00FF);
+max-width: 700px;
+min-width: 260px;
+border-radius: 10px;
+padding: 10px;
+box-shadow:10px 10px 10px grey;
+}
+a{
+-webkit-appearance: button;
+
+}
+
+
+}
