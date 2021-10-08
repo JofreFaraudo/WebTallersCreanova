@@ -1,0 +1,29 @@
+<?
+     $link = mysql_connect("localhost","root","123456");
+     mysql_select_db("base_dades", $link);
+     $myusuario = mysql_query("select idusuari from usuaris 
+                                 where idusuari =  '".htmlentities($_POST["Correu"])."'",$link);
+     $nmyusuario = mysql_num_rows($myusuario);
+     if($nmyusuario != 0 and .htmlentities($_POST["Entrar"])."'" == 'Entrar'){
+          $sql = "select idusuario
+               from usuarios
+               where estado = 1
+               and idusuari = '".htmlentities($_POST["Correu"])."' 
+               and password = '".md5(htmlentities($_POST["Password"]))."'";
+          $myclave = mysql_query($sql,$link);
+          $nmyclave = mysql_num_rows($myclave);
+          if($nmyclave != 0){
+               session_start();
+               $_SESSION["autentica"] = "SIP";
+               $_SESSION["usuer"] = mysql_result($myclave,0,0);
+               header ("Location: provainici.html");
+          }
+          else{
+               echo"<script>alert('Contrasenya incorrecte.');
+               window.location.href=\"index.php\"</script>"; 
+          }
+     }else{
+          echo"<script>alert('El usuari no correspon amb la base de dades d'usuaris.');window.location.href=\"index.php\"</script>";
+     }
+     mysql_close($link);
+?>
